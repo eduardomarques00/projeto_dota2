@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=PT+Sans:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:ital@1&family=PT+Sans:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+        </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota2</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="form.js">
+</head>
+
+<script>
+    function fotomenu(foto){
+        document.getElementById('iconedota').src=foto;
+
+    }
+    </script>
+<script>
+    function calc_total(){
+     var qtd= parseInt(document.getElementById('cQtd').value);
+     tot = qtd*3;
+     document.getElementById('cTot').value= tot;
+    }
+</script>    
+<body>
+    <div id="interface">
+    <header id="cabecalho">
+        <hgroup>
+        <h1>DOTA 2</h1>
+        <h2>JUNTE-SE À BATALHA DOS ANCESTRAIS</h2>
+        </hgroup>
+
+        
+            <img id="iconedota" src="imgdota/imgtopo.png">
+            
+   <nav id="menu">     
+   <h1>> Menu Principal</h1>
+   <ul>
+        <li onmouseover="fotomenu('imgdota/home.png')" onmouseout="fotomenu('imgdota/suport.png')"><a href="index.html">Home</a></li>
+        <li onmouseover="fotomenu('imgdota/noticia.png')" onmouseout="fotomenu('imgdota/suport.png')"><a href="novidades.html">Novidades</a></li>
+        <li onmouseover="fotomenu('imgdota/heroi.png')" onmouseout="fotomenu('imgdota/suport.png')"><a href="heroes.html">Heróis</a></li>
+        <li onmouseover="fotomenu('imgdota/esport.png')" onmouseout="fotomenu('imgdota/suport.png')"><a href="esport.html">Esportes</a></li>
+        <li onmouseover="fotomenu('imgdota/suport.png')" onmouseout="fotomenu('imgdota/suport.png')"><a href="contato.html">Suport</a></li>
+        
+        
+   </ul>
+
+    
+    </nav>
+    </header>
+    <form method="post" id="fcontato" action="mailto:marquescpv@hotmail.com" oninput="calc_total()">
+        <fieldset id="identificacao">
+          
+           <legend> Identificação do usuario:</legend>
+             <p><label for="cnome"> Nome:</label> <input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+             <p> <label for="csenha"> Senha:</label> <input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 digitos"/></p>
+             <p><label for="cemail"> E-mail:</label> <input type="email" name="temail" id="cemail" size="20" maxlength="40"/></p>
+             <fieldset id="sexo">
+                  <legend>Sexo:</legend>
+               <input type="radio" name="tsexo" id="cmasc" checked/><label for="cmasc">-Masculino:</label>
+               <input type="radio" name="tsexo" id="cfem"/><label for="cfem"> -Feminino:</label>
+            </fieldset>
+           <p> Data de Nascimento: <input type="date" name="tnasc" id="cnasc">   </p>
+        </fieldset>
+
+        <fieldset id="endereco">
+           
+           <legend> Endereço do usuario:</legend>
+           <p> Logradouro: <input type="text" name="" id="" size="13" maxlength="80" placeholder="Rua,Av,Trav"> </p>
+        <p>  Número: <input type="number" name="tnum" id="cnum" min="1" max="9999"> </p>
+            <p>Estado:
+            <select name="tEst" id="cEst">
+                <option>Rio de Janeiro</option>
+                <option selected>São Paulo</option>
+                <option>Minas Gerais</option>
+                <option>Parané</option>
+                <option>Santa Catarina</option>
+                <option>Rio Grande do Sul</option>
+            </select></p>
+           <p> Cidade: <input type="text" name="tCid" id="cCid" maxlength="40" placeholder=" Sua Cidade" list="cidades"/></p>
+            <datalist id="cidades">
+                <option value="Rio de Janeiro"></option>
+                <option value="Nova Iguaçu"></option>
+            </datalist>
+            
+        </fieldset>
+
+        <fieldset id="mensagem">
+             
+        <legend> Mensagem do Usuario</legend>
+            <p>Grau de urgencia:
+                Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1">Max
+            </p>
+            <p>Mensagem:
+                <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset id="cash">
+           <legend > Adquerir um avatar</legend>
+           <p> <input type="checkbox" name="tSckin" id="cSckin"/> 
+            <label for="cSckin">avatar raro</label>
+           </p>
+            
+            <p><label for="cCor"> cor:</label>
+                <input type="color" name="tCor" id="cCor"/>
+            </p>
+
+           <p><label for="cQtd"> Quantidade:</label>  
+                <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"/>
+            </p>
+           <p><label for="cTot"> Preço Total:</label>
+        <input type="text" name="tTot" id="cTot" placeholder="Total do pagamento" readonly></p>
+        </fieldset>
+        <!--<input type="submit" value="enviar"/> -->
+        <input id="enviar" type="image" name="tEnviar" src="/projeto_dota/imgdota/submit.png"/>
+    </form>
+
+<footer id="rodape">
+    <p>   Copyright &copy 2022 - by Valve corporation<br/>
+     <a href="https://www.valvesoftware.com/pt-br/" target="_blank"> Valve </a>  | <a href="https://store.steampowered.com/" target="_blank"> Steam</a></p>
+     <p>  <img id="iconedota" src="imgdota/rodape.png"></p>
+   </footer>
+   </div>
+   </body>
+   </html>

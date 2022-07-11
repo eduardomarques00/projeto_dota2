@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=PT+Sans:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:ital@1&family=PT+Sans:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+        body img#imgrodapedir1{
+    position: absolute;
+    left: 340px;
+    top: 1282px;
+    height: 150px;
+    width: 162px;
+    margin: -300px 0px -400px auto;
+        }
+        </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota2</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="novidades.css">
+</head>
+
+<script>
+    function fotomenu(foto){
+        document.getElementById('iconedota').src=foto;
+
+    }
+</script>
+<body>
+    <div id="interface">
+    <header id="cabecalho">
+        <hgroup>
+        <h1>DOTA 2</h1>
+        <h2>JUNTE-SE À BATALHA DOS ANCESTRAIS</h2>
+        </hgroup>
+
+        
+            <img id="iconedota" src="imgdota/imgtopo.png">
+            
+   <nav id="menu">     
+   <h1>> Menu Principal</h1>
+   <ul>
+        <li onmouseover="fotomenu('imgdota/home.png')" onmouseout="fotomenu('imgdota/noticia.png')"><a href="index.html">Home</a></li>
+        <li onmouseover="fotomenu('imgdota/noticia.png')" onmouseout="fotomenu('imgdota/noticia.png')"><a href="novidades.html">Novidades</a></li>
+        <li onmouseover="fotomenu('imgdota/heroi.png')" onmouseout="fotomenu('imgdota/noticia.png')"><a href="heroes.html">Heróis</a></li>
+        <li onmouseover="fotomenu('imgdota/esport.png')" onmouseout="fotomenu('imgdota/noticia.png')"><a href="esport.html">Esportes</a></li>
+        <li onmouseover="fotomenu('imgdota/suport.png')" onmouseout="fotomenu('imgdota/noticia.png')"><a href="contato.html">Suport</a></li>
+        
+        
+   </ul>
+
+    
+    </nav>
+    </header>
+    <section id="corpo-full">
+        <article id="noticia">
+            <h2>Void Spirit É O Mais Novo Herói De Dota 2</h2>       
+            <p>Void Spirit faz uma referência a seus irmãos, Earth Spirit, Ember Spirit e Storm Spirit,
+                afirmando se juntará a eles em suas batalhas na terra. Após isso ele se teleporta para o palco do The International 2019,
+                onde diz que sua vez de lutar chegou.</p>
+            
+            <h2>Sobre</h2>
+            <p>Void Spirit, um ancião chamado Inai, é considerado o mais velho dos espíritos. 
+               Capaz de sair e entrar do plano mortal, o herói consegue atacar os oponentes de diferentes posições.
+               Pode desempenhar funções de Melee, Carry, Escape, Nuker e Disabler.</p>
+    </section>
+     
+    <section id="conteudo">
+        <img src="/projeto_dota/imgdota/spiritvoid.png"usemap="#meumapa">
+        <map name="meumapa">
+            <area shape="rect" coords="178,361,236,422" href="sobreheroi.html#resquicio" target="janela"/>
+            <area shape="rect" coords="244,363,301,419" href="sobreheroi.html#sumico" target="janela"/>
+            <area shape="rect" coords="311,364,367,423" href="sobreheroi.html#pulso" target="janela"/>
+            <area shape="rect" coords="376,364,432,422" href="sobreheroi.html#projecao" target="janela"/>
+        </map>
+        <iframe src="sobreheroi.html" name="janela" id="frame-heroi"></iframe>
+    </section>
+    <img id="imgrodapedir1" src="/projeto_dota/imgdota/50.gif" alt="">
+<footer id="rodape">
+    <p>   Copyright &copy 2022 - by Valve corporation<br/>
+     <a href="https://www.valvesoftware.com/pt-br/" target="_blank"> Valve </a>  | <a href="https://store.steampowered.com/" target="_blank"> Steam</a></p>
+     <p>  <img id="iconedota" src="imgdota/rodape.png"></p>
+   </footer>
+   </div>
+   </body>
+   </html>

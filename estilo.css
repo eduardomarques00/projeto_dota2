@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=PT+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:ital@1&family=PT+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+body{
+    background-color: rgba(51, 50, 50, 0.932);
+    color: white;
+    font-size: 20px;
+  
+  
+    
+}
+
+
+body img#imgrodapedir{
+    position: absolute;
+    left: -150px;
+    top: 1772px;
+    height: 400px;
+    width: 322px;
+    margin: -300px 0px -400px auto;
+}
+body h3{
+    font-size: 16pt;
+    color: rgb(255, 252, 251);
+    
+}
+body hgroup h2{
+    font-size: 20pt;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+div#interface{
+    width: 900px;
+    background-color: rgb(0, 0, 0);
+    margin: -30px auto 0px auto;
+    box-shadow: 0px 0px 14px rgb(161, 161, 161);
+    padding: 10px;
+    
+}
+
+p{
+    text-align: justify;
+    text-indent: 50px;
+    font-family: 'PT Sans', sans-serif;
+}
+a {
+    text-align: justify;
+    text-decoration: none;
+    color: #fdfdfd;
+    text-shadow: 1px 1px 1px rgba(253, 252, 252, 0.973);
+}
+a:hover{
+   text-decoration: underline;
+}
+header#cabecalho img#iconedota{
+    position: absolute;
+    left: 1080px;
+    top: 50px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 170px;
+    background: url("/imgdota/valve.png") no-repeat 0px 110px ;
+}
+
+header#cabecalho h1{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 36px;
+    color: rgb(250, 247, 246);
+    text-shadow: 1px 1px 10px rgba(221, 24, 24, 0.973);
+    margin-bottom: 6px;
+}
+header#cabecalho h2{
+    font-family: 'Lora', serif;
+    font-size: 30px ;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px rgba(221, 24, 24, 0.973);
+    margin-top: 0px;
+    
+/*configuração da imagem com descrição e bordas */
+}
+figure.legenda{
+  position: relative;
+  border: 3px solid rgba(255, 255, 255, 0.61);
+  
+}
+figure.legenda h1{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: rgb(247, 247, 247);
+    text-shadow: 1px 1px 10px rgba(153, 36, 36, 0.973);
+    
+    
+}
+
+figure.legenda img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+figure.legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: opacity 2s;
+   
+    
+
+}
+figure.legenda figcaption p{
+    text-align: center;
+   
+}
+
+figure.legenda:hover figcaption{
+    opacity: 1;
+    border: 3px solid rgba(223, 6, 6, 0.61);
+      ;
+    
+}
+
+/* Formatação do menu*/
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 650px;
+
+}
+
+nav#menu li {
+    display:inline-block;  /*o menu fica alinhado na horizontal*/
+    background-color: rgba(255, 255, 255, 0.918);
+    padding: 5px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: rgba(49, 40, 40, 0.808); /*quando passar o mouse no menu ele muda para cor indicada*/
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu a{
+    color: black;
+    text-decoration: none;
+    
+
+}
+nav#menu a:hover{
+    color: rgb(254, 254, 255);
+}
+
+/*configuração do corpo (seção) */
+
+section#corpo {
+    display: block; /*o corpo fica dentro de um bloco*/
+    width: 470px;   /*difinindo a largura do corpo*/
+    float: left;  /*a section ira flutuar no lado esquerdo*/
+  
+}
+
+aside#lateral {
+    display: block;
+    width: 380px;
+    float: right; /*o aside vai flutuar a direita */
+    border-left: 1px solid white;
+    padding-left: 15px;
+    background-color: #333232;
+    box-shadow:2px 2px 2px #b4b1b1;
+}
+aside#lateral h1{
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fdfdfd;
+    background-color:  rgba(121, 118, 115, 0.432);
+    padding: 5px 0px 5px 10px;
+    margin: 5px 0px 5px 0px;
+    
+}
+/*configuração do rodape */
+footer#rodape {
+    clear: both;/*vai fazer com que o rodape fique fora das duas divisoes da pagina*/
+    border-top: 1px solid white;
+}
+
+footer#rodape p{
+    text-align: center;
+}
+/* configuração da tabela*/
+
+table#tabela {
+    border: 1px solid white;
+    border-spacing: 0px;/* aqui eu removi o espaço entre as bordas da tabela*/
+   margin-left: auto;
+}
+table#tabela td{
+    border: 2px solid rgba(63, 62, 61, 0.432) ;
+    padding: 3px;
+    text-align: center;
+}
+table#tabela td.esquerda {
+color: rgb(43, 226, 67) ;
+background-color: rgba(80, 78, 75, 0.432);
+}
+table#tabela td.direita {
+    background-color: rgb(48, 49, 51);
+    text-align: left;
+
+}
+table#tabela caption{
+    color: #606060;
+    font-size: 20px;
+    font-weight: bolder;
+}
+article#noticia h2{
+    font-size: 12pt;
+    color: #fdfdfd;
+    background-color:  rgba(80, 78, 75, 0.432);
+    padding: 5px 0px 5px 10px;
+    margin: 5px 0px 5px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+article#noticia h3{
+    text-align: right;
+    font-size: 16pt;
+    color: #606060;
+}
+
+video#filme{
+    width: 300px;
+    height: 200px;
+    margin-left: 20px;
+}

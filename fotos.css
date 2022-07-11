@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+h3{
+    text-align: justify;
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(41, 46, 46);
+    
+}
+
+p{
+    text-align: justify;
+    text-indent: 50px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+ul#album-fotos{
+    width: 700px;
+    margin: 0 auto;
+    padding:50px ;
+    overflow: hidden;
+    list-style: none;
+}
+ul#album-fotos li{
+    float: left;
+    width: 170px;
+    height: 140px;
+    margin: 1px;
+    border: 1px solid rgb(22, 21, 21);
+    background-color: rgb(60, 61, 61);
+    box-shadow: 1px 1px 3px rgb(10, 10, 10);
+    -webkit-transition:all 0.5s ease-in;
+
+}
+ul#album-fotos li span{
+    opacity: 0;
+    color: rgb(233, 230, 235);
+   text-shadow: 1px 1px 1px rgb(2, 1, 1);
+   font-family: 'Fira Sans', sans-serif;
+   font-size: 27pt;
+   line-height: 200px;
+   padding: 5px;
+}
+
+ul#album-fotos li:hover{
+    -webkit-transform: scale(1.5) ;
+}
+
+ul#album-fotos li:hover span{
+    opacity: 1;
+}
+
+
+
+ul#album-fotos li#foto01{
+    background: url('/projeto_dota/imgdota/abbadon.gif') no-repeat;
+    background-position:20% 20%;
+    background-size: 320px 320px;
+    background-color: black;
+}
+ul#album-fotos li#foto01:hover{
+    background-position: 10px 10px;
+    background-size: 200px 200px;
+}
+
+
+ul#album-fotos li#foto02{
+    background: url('/projeto_dota/imgdota/udding.gif') no-repeat;
+    background-position:40% 40%;
+    background-size: 320px 320px;
+    background-color: black;
+}
+ul#album-fotos li#foto02:hover{
+    background-position: 10px 10px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto03{
+    background: url('/projeto_dota/imgdota/anct.gif') no-repeat;
+    background-position:40% 40%;
+    background-size: 320px 320px;
+    background-color: black;
+}
+ul#album-fotos li#foto03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto04{
+    background: url('/projeto_dota/imgdota/magina.gif') no-repeat;
+    background-position:50% 50%;
+    background-size: 400px 400px;
+    background-color: black;
+}
+ul#album-fotos li#foto04:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto05{
+    background: url('/projeto_dota/imgdota/warven.gif') no-repeat;
+    background-position:40% 40%;
+    background-size: 320px 320px;
+    background-color: black;
+}
+ul#album-fotos li#foto05:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto06{
+    background: url('/projeto_dota/imgdota/axe.gif') no-repeat;
+    background-position:40% 40%;
+    background-size: 320px 320px;
+    background-color: black;
+}
+ul#album-fotos li#foto06:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto07{
+    background: url('/projeto_dota/imgdota/bane.gif') no-repeat;
+    background-position:40% 40%;
+    background-size: 320px 320px;
+    background-color: black;
+}
+ul#album-fotos li#foto07:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto08{
+    background: url('/projeto_dota/imgdota/SHADOW.gif') no-repeat;
+    background-position:40% 40%;
+    background-size: 320px 320px;
+    background-color: black;
+}
+ul#album-fotos li#foto08:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto09{
+    background: url('/projeto_dota/imgdota/beast.gif') no-repeat;
+    background-position:40% 40%;
+    background-size: 320px 320px;
+    background-color: black;
+}
+ul#album-fotos li#foto09:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto10{
+    background: url('/projeto_dota/imgdota/blood.gif') no-repeat;
+    background-position:40% 40%;
+    background-size: 320px 320px;
+    background-color: black;
+}
+ul#album-fotos li#foto10:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto11{
+    background: url('/projeto_dota/imgdota/bounty.gif') no-repeat;
+    background-position:40% 40%;
+    background-size: 320px 320px;
+    background-color: black;
+}
+ul#album-fotos li#foto11:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto12{
+    background: url('/projeto_dota/imgdota/brew.gif') no-repeat;
+    background-position:40% 40%;
+    background-size: 320px 320px;
+    background-color: black;
+}
+ul#album-fotos li#foto12:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto13{
+    background: url('/projeto_dota/imgdota/brstle.gif') no-repeat;
+    background-position:50% 50%;
+    background-size: 400px 400px;
+    background-color: black; background-position:40% 40%;
+    background-size: 320px 320px;
+    background-color: rgb(0, 0, 0);
+}
+ul#album-fotos li#foto13:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto14{
+    background: url('/projeto_dota/imgdota/ogre.gif') no-repeat;
+    background-position:20% 20%;
+    background-size: 320px 320px;
+    background-color: black;
+}
+ul#album-fotos li#foto14:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto15{
+    background: url('/projeto_dota/imgdota/spiritgif.gif') no-repeat;
+     background-position:40% 40%;
+    background-size: 320px 320px;
+    background-color: black;
+}
+ul#album-fotos li#foto15:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto16{
+    background: url('/projeto_dota/imgdota/chaos.gif') no-repeat;
+    background-position:40% 40%;
+    background-size: 320px 320px;
+    background-color: black;
+}
+ul#album-fotos li#foto16:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
